@@ -2,7 +2,7 @@
 // @name         Github Compat For Chrome
 // @name:zh-CN   Github兼容性优化，Chrome版
 // @namespace    https://greasyfork.org/users/159546
-// @version      1.0.1
+// @version      1.0.2
 // @description  Fix Github problem while using Chrome if needed.
 // @description:zh-CN 优化Github在Chrome浏览器上的使用体验和兼容性，如果需要这么做。
 // @author       LEORChn
@@ -48,12 +48,12 @@ function rmViews(){
     for(var i=0,len=spt.length;i<len;i++) if(spt[i].src.includes('unsupported')) spt[i].remove();
 }*/
 function jsCompat(){
-    addjs('https://assets-cdn.github.com/assets/compat-37e9ce8318a51dd51033283da82c8546.js');
-    addjs('https://assets-cdn.github.com/assets/frameworks-215987af1fc2831b8b9806a99f0f56e0.js');
+    addjs('https://assets-cdn.github.com/assets/compat-a48960bafc17c30572990bbab3664e9c.js');
+    addjs('https://assets-cdn.github.com/assets/frameworks-e862d0f5d5e4edb5939aab5784639150.js');
 }
 function load(){ // call once when loaded page
     if(document.readyState.toLowerCase()=='complete'){
-        addjs('https://assets-cdn.github.com/assets/github-264a51965ffcef7a5aefdf892818a597.js');
+        addjs('https://assets-cdn.github.com/assets/github-b1fc511319f2baac01d4c600b5a9b6f1.js');
         return true;
     }
 }
